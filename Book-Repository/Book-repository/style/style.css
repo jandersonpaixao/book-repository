@@ -1,0 +1,174 @@
+*{
+  background-color: #348f92;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Quicksand', sans-serif;
+  color: #FFFFFF;
+  align-items: center;
+}
+
+/* ~~~~~~ Mobile first ~~~~~~*/
+
+.header{
+  max-width: 80%;
+  max-height: 70px;
+  margin: 5%;
+  text-align: center;
+}
+.img-header{
+  width: 100%;
+  padding: 2px;
+}
+/* corpo do formulário */
+.corpoFormulario {
+  width: 80%;
+  padding: 10%;
+}
+/* decoração dos elementos input */
+.caixaInput{
+  width: 100%;
+  height: 2rem;
+  background-color:#FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border-style: hidden;
+}
+.caixaInputData{
+  width: 100%;
+  height: 2rem;
+  background-color:#FFFFFF;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border-style: hidden;
+}
+/* decoração do botão de envio */
+.botaoEnviarFormulario{
+  background-color: #FFFFFF;
+  color: #4C2B8D;
+  font-size: 15px;
+  width: 40%;
+  height: 1.5rem;
+  margin-top: 2%;
+  border-radius: 10px;
+  border-style: hidden; 
+}
+/* section do corpo da tabela */
+.tabela, .celulasTabela{
+  background-color: #FFFFFF;
+  color: #4C2B8D;
+  padding: 1%;
+  margin: 10%;
+}
+th{
+  font-size: 10px;
+  padding: 1%;
+  word-break: break-word;
+}
+.dados-tabela{
+  color: #FFFFFF;
+  word-break: break-word;
+}
+.botao-tabela{
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/lixeira.png);
+  border-style: none;
+  border-radius: 2px;
+  background-color: #4C2B8D;
+}
+
+.footer{
+  position: baseline;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+}
+
+.footer__text-credits, .footer__text{
+  color: #313131;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.footer__text{
+  color: #4C2B8D;
+}
+
+
+/* ~~~~~Tablet ~~~~~~ */
+@media (min-width: 768px) {
+
+  .header{
+    height: 100%;
+    padding: 5%;
+  }
+  .titulo-label{
+    font-size: 20px;
+  }
+  .caixaInput{
+    font-size: 20px;
+  }
+  .botaoEnviarFormulario{
+    font-size: 18px;
+    width: 15%;
+  }
+  .tabela{
+    margin-top: 1%;
+    padding: 1%;
+  }
+  th, .dados-tabela{
+    font-size: 18px;
+    text-align: center;
+  }
+  .botao-tabela{
+    width: 20px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .header{
+    height: 100%;
+    padding: 4%;
+  }
+  .titulo-label{
+    font-size: 20px;
+  }
+  .caixaInput{
+    font-size: 20px;
+    width: 100%;
+    height: 2rem;
+  }
+  .botaoEnviarFormulario{
+    font-size: 18px;
+    width: 15%;
+    height: 2rem;
+  }
+  .tabela{
+    width: 80%;
+    margin-top: 10px;
+  }
+  th, .dados-tabela{
+    font-size: 20px;
+    text-align: center;
+  }
+  .botao-tabela{
+    width: 20px;
+  }
+  
+}

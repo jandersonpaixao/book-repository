@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+  <link href="./style/style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./img/icone-livro.png" type="image/x-icon">
+  <title>Book Repository</title>
+</head>
+
+<body>
+    <header class="header">
+      <img src="./img/book repository.png" alt="Logotipo Book Repository" class="img-header"/>
+    </header>
+    <main> 
+      <section class="corpoFormulario">
+        
+        <form onsubmit="criarTabela(event)" class="formulario">
+          <div class="div-formulario">
+            <label class="titulo-label" for="titulo">Título</label>
+            <input type="text" id="titulo" class="caixaInput">
+          </div>
+          <div class="div-formulario"></div>
+            <label class="titulo-label" for="autor">Autor</label>
+            <input type="text" id="autor" class="caixaInput">
+          </div>
+          <div class="div-formulario"></div>
+            <label class="titulo-label" for="isbn">ISBN</label>
+            <input type="number" id="isbn" class="caixaInput">
+          </div>
+          <div class="div-formulario"></div>
+            <label class="titulo-label" for="data">Data de publicação</label>
+            <input type="date" id="data" class="caixaInputData">
+          </div>
+          <div class="div-formulario">
+            <label class="titulo-label" for="paginas">Nº de páginas</label>
+            <input type="number" id="paginas" class="caixaInput">
+          </div>
+          <div>
+          <input type="submit" class="botaoEnviarFormulario">
+          </div>
+        </form>
+
+      </section>
+    
+    <section class="corpoDaTabela">  
+      <table class="tabela">
+        <thead class="cabecalho-tabela">
+          <tr> 
+            
+            <th class="celulasTabela">Título</th>
+            <th class="celulasTabela">Autor</th>
+            <th class="celulasTabela">ISBN</th>
+            <th class="celulasTabela">Data de Publicação</th>
+            <th class="celulasTabela">Nº de páginas</th>
+            <th class="celulasTabela">Hora/Data de Inserção</th>
+          </tr>        
+        </thead>
+        
+        <tbody class="dados-tabela" id="dadosTabela">
+          
+          
+        </tbody>
+        
+      </table>
+    </section>
+    
+    </main>
+    <script src="./script/script.js"></script>
+
+    <footer class="footer">
+      <h1 class="footer__text-credits">Desenvolvido por</p><a href="https://github.com/allanina" class="footer__text"> Allana Evellyn</a> e </p><a href="https://github.com/jandersonpaixao" class="footer__text"> Janderson Paixão </a>
+    </footer>
+  </body>
+  </html>
